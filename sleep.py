@@ -7,7 +7,7 @@ from bleak import BleakClient
 ADDRESS = "A1379F49-AA6C-D07E-5B6B-C7971F54AC85"
 GENERAL_CHAR = "0000ee02-0000-1000-8000-00805f9b34fb"
 STEP = 42
-DELAY = 42
+DELAY = 96
 
 def toRGB(c, a):
     return bytearray([0x69, 0x96, 0x5, 0x2, c[0], c[1], c[2], a])
