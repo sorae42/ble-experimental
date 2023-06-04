@@ -5,7 +5,7 @@ import asyncio
 
 from bleak import BleakClient
 
-ADDRESS = "022481EE-AD90-A4E7-DB74-95A825543696"
+ADDRESS = "A1379F49-AA6C-D07E-5B6B-C7971F54AC85"
 GENERAL_CHAR = "0000ee02-0000-1000-8000-00805f9b34fb"
 
 def toRGB(c, a):
@@ -24,7 +24,7 @@ async def main(address):
     async with BleakClient(address) as client:
         while True:
             img = capture_screenshot()
-            c = img.getpixel((2420, 2022))
+            c = img.getpixel((1690, 1960))
             color = c
             alpha = 0xff
             converted = toRGB(color, alpha)
